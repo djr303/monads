@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "dist/",
+    "experimentalDecorators": true,
+    "types": [
+      "@types/node"
+    ]
+  },
+  "include": [
+    "decorators/function-parameters.ts"
+  ]
+}
