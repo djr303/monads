@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "outDir": "dist/",
+    "outDir": "./",
+    "rootDir": "./",
     "experimentalDecorators": true,
+    "noImplicitAny": true,
     "types": [
       "@types/node"
     ]
   },
+  "exclude": ["node_modules"],
   "include": [
-    "decorators/function-parameters.ts"
+    "Task.ts"
   ]
 }

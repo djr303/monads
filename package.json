@@ -12,7 +12,8 @@
   "scripts": {
     "test": "yarn run compile && mocha ./tests",
     "lint-fix": "eslint --fix ./",
-    "compile": "tsc ./Task.ts --outFile ./Task.js"
+    "compile": "node ./node_modules/typescript/bin/tsc -p ./tsconfig.json"
+
   },
   "devDependencies": {
     "@types/node": "^13.13.4",
