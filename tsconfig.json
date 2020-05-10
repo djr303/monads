@@ -1,16 +1,24 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES5",
     "outDir": "./",
     "rootDir": "./",
     "experimentalDecorators": true,
     "noImplicitAny": true,
     "types": [
       "@types/node"
-    ]
+    ],
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
   },
   "exclude": ["node_modules"],
-  "include": [
-    "Task.ts"
-  ]
+  "include": ["fp-ts/TaskEither.ts"]
 }

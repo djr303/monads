@@ -13,10 +13,10 @@
     "test": "yarn run compile && mocha ./tests",
     "lint-fix": "eslint --fix ./",
     "compile": "node ./node_modules/typescript/bin/tsc -p ./tsconfig.json"
-
   },
   "devDependencies": {
     "@types/node": "^13.13.4",
-    "tslint": "^6.1.2"
+    "tslint": "^6.1.2",
+    "fp-ts": "^2.5.4"
   }
 }

@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Task_1 = require("fp-ts/lib/Task");
+var t = Task_1.of(64);
+t().then(function (x) { return console.log(x); });
+var t2 = function () { return Promise.resolve(128); };
+t2().then(function (x) { return console.log(x); });
+var map1 = Task_1.map(function (x) { return x * 2; });
+var t3 = map1(t2);
+t3().then(function (x) { return console.log(x); });
+var chain1 = Task_1.chain(function (x) { return function () { return Promise.resolve(x * 2); }; });
+var t4 = chain1(t3);
+t4().then(function (x) { return console.log(x); });
